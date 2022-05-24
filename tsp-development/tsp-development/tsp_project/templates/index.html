@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://apis.mapmyindia.com/advancedmaps/v1/4bbc39adb6604ec736d234641954c6be/map_load?v=1.5"></script>
+  <script src="https://apis.mapmyindia.com/advancedmaps/api/0ad2c1ff-4994-4cf3-9ff3-b0b3b30fdd35/map_sdk_plugins"></script>
+  <style>
+    html,
+    body,
+    #map {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 99%;
+    }
+  
+  </style>
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+  <!-- <link rel="stylesheet" href="../static/style.css"> -->
+  <link rel="icon" href="data:,">
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="desciption" content="Mapmyindia Search Plugin">
+</head>
+
+<body>
+  <div id="map" style="background-color: cyan"></div>
+  <!-- <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <input type="text" id="auto" name="auto" class="search-outer form-control as-input"
+        placeholder="Search places or eLoc's..." required="" spellcheck="false">
+  </div>
+  <button class="submit-btn">Find route</button>
+  <!-- <script src="https://apis.mappls.com/advancedmaps/v1/4bbc39adb6604ec736d234641954c6be/map_load?v=1.5"></script> -->
+  <script src="{{url_for('static', filename = 'script.js')}}"></script>
+  <!-- <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script> -->
+  <!-- <script src="../static/script.js"></script> -->
+</body>
+
+</html>
